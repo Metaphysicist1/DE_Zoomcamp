@@ -2,9 +2,8 @@ FROM python:3.10
 
 RUN pip install pandas
 
-
 WORKDIR /app
 
-COPY scripts/eda.ipynb .
+COPY scripts/pipeline.py .
 
-CMD ["python", "eda.ipynb"]
+CMD ["python", "pipeline.py"]
