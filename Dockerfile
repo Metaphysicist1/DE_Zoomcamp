@@ -4,6 +4,6 @@ RUN pip install pandas
 
 WORKDIR /app
 
-COPY scripts/pipeline.py .
+COPY . .
 
-CMD ["python", "pipeline.py"]
+CMD ["python", "scripts/pipeline.py"]
