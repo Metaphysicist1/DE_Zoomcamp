@@ -1,9 +1,11 @@
 FROM python:3.12.8
 
-RUN pip install pandas
+# Install required packages
+RUN pip install pandas sqlalchemy psycopg2 
 
 WORKDIR /app
 
-COPY . .
+COPY ingest.py .
+COPY data/yellow_tripdata_2021-07.csv data/yellow_tripdata_2021-07.csv
 
-CMD ["python", "scripts/pipeline.py"]
+ENTRYPOINT [ "python", "ingest.py" ]
