@@ -24,6 +24,6 @@ Question 4. Longest trip for each day
 
 Question 5. Three biggest pickup zones
 
-
+East Harlem North, East Harlem South, Morningside Heights
 
 Question 6. Largest tip
