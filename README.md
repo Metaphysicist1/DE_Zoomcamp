@@ -16,3 +16,14 @@ Question 3. Trip Segmentation Count (1 point)
 
 (fifth)
 104,838; 199,013; 109,645; 27,688; 35,202
+
+
+Question 4. Longest trip for each day
+2019-10-11
+
+
+Question 5. Three biggest pickup zones
+
+
+
+Question 6. Largest tip
