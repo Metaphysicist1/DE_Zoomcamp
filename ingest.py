@@ -27,6 +27,8 @@ def main(params):
 
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
 
+    
+    
     df_iter = pd.read_csv(f'{os.getcwd()}/data/yellow_tripdata_2021-07.csv', iterator=True, chunksize=100000)
 
     df = next(df_iter)
