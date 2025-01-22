@@ -27,3 +27,4 @@ Question 5. Three biggest pickup zones
 East Harlem North, East Harlem South, Morningside Heights
 
 Question 6. Largest tip
+"JFK Airport"
