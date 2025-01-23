@@ -9,6 +9,12 @@ The NY-Taxi Data Analyzer is a project designed to facilitate the analysis of Ne
 
 ## Setup Instructions
 
+ **If Prefare Pull Ingest Data Image from Docker Hub**
+   ```bash
+   docker pull metaphysicist/postgres-ingest
+   ```
+
+
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/ny-taxi-data-analyzer.git
