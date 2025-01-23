@@ -11,11 +11,11 @@ terraform {
 provider "google" {
   project = "data-experiments-448712"
   region  = "us-central1"
-  
+
 }
 
 resource "google_storage_bucket" "experimental_terraform_bucket" {
-  name          = "engineering_terraform_bucket"
+  name          = var.gcs_bucket_name
   location      = "US"
   force_destroy = true
 
