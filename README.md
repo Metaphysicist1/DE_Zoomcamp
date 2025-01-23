@@ -3,8 +3,8 @@
 ## Project Description
 The NY-Taxi Data Analyzer is a project designed to facilitate the analysis of New York City taxi data using PostgreSQL and PgAdmin. This project leverages Docker to create a containerized environment for easy setup and management of the database.
 
-## Prerequisites
-- Docker installed on your machine.
+![image](https://github.com/user-attachments/assets/8357f239-29cd-4694-a11d-0e3d18f6da21)
+
 
 
 ## Setup Instructions
