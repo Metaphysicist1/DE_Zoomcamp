@@ -1,38 +1,48 @@
-# DE_Zoomcamp
+# NY-Taxi Data Analyzer
+
+## Project Description
+The NY-Taxi Data Analyzer is a project designed to facilitate the analysis of New York City taxi data using PostgreSQL and PgAdmin. This project leverages Docker to create a containerized environment for easy setup and management of the database.
+
+## Prerequisites
+- Docker installed on your machine.
 
 
+## Setup Instructions
 
-**Pull data ingestion docker Image**
-```
-docker pull metaphysicist/postgres-ingest
-```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/ny-taxi-data-analyzer.git
+   cd ny-taxi-data-analyzer
+   ```
 
+2. **Pull the Docker Images**
+   Pull the necessary Docker images for PostgreSQL and PgAdmin:
+   ```bash
+   docker pull postgres
+   docker pull dpage/pgadmin4
+   ```
 
-Question 1. Version of pip (1 point)
+3. **Run Docker Containers**
+   Start the PostgreSQL and PgAdmin containers using Docker Compose:
+   ```bash
+   docker-compose up -d
+   ```
 
-24.3.1
+4. **Access PgAdmin**
+   Open your web browser and navigate to `http://localhost:5050`. Log in with the credentials specified in your `docker-compose.yml` file.
 
+5. **Connect to PostgreSQL**
+   In PgAdmin, create a new server connection using the following details:
+   - **Host**: `postgres`
+   - **Port**: `5432`
+   - **Username**: `your_postgres_user`
+   - **Password**: `your_postgres_password`
 
+## Usage
+Once connected, you can start analyzing the NY-Taxi data. Import your dataset into the PostgreSQL database and use SQL queries to extract insights.
 
-Question 2. Docker networking and docker-compose (1 point)
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-db:5433
-
-
-
-Question 3. Trip Segmentation Count (1 point)
-
-(fifth)
-104,838; 199,013; 109,645; 27,688; 35,202
-
-
-Question 4. Longest trip for each day
-2019-10-11
-
-
-Question 5. Three biggest pickup zones
-
-East Harlem North, East Harlem South, Morningside Heights
-
-Question 6. Largest tip
-"JFK Airport"
+## Acknowledgments
+- Thanks to the contributors and the open-source community for their support.
