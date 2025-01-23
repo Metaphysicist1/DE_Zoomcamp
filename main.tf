@@ -28,3 +28,8 @@ resource "google_storage_bucket" "experimental_terraform_bucket" {
     }
   }
 }
+
+resource "google_bigquery_dataset" "terraform_dataset" {
+  dataset_id = "terraform_dataset_example"
+
+}
