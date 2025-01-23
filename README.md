@@ -1,5 +1,13 @@
 # DE_Zoomcamp
 
+
+
+**Pull data ingestion docker Image**
+```
+docker pull metaphysicist/postgres-ingest
+```
+
+
 Question 1. Version of pip (1 point)
 
 24.3.1
